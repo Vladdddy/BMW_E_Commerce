@@ -11,6 +11,7 @@
 
 <body>
     <section class="hero">
+        <!-----------------------------------------Laptop Navbar------------------------------------------>
         <nav class="laptop-responsive-navbar">
             <a href="index.html" class="bmw-logo">
                 <img src="img/bmw-logo.png" alt="">
@@ -24,6 +25,7 @@
             </div>
         </nav>
 
+        <!-----------------------------------------Mobile Navbar------------------------------------------>
         <nav class="mobile-responsive-navbar" id="navbar">
             <a href="index.html" class="bmw-logo">
                 <img src="img/bmw-logo.png" alt="">
@@ -55,6 +57,7 @@
             </div>
         </nav>
 
+        <!-----------------------------------------Side Mobile Navbar------------------------------------------>
         <div class="side-navbar">
             <a href="#" id="sideMenu" class="side-menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="" height="" fill="" class="bi bi-list"
@@ -79,13 +82,18 @@
             <button class="description-button" id="descBtn">Buy Now</button>
         </div>
 
+        <!-------------------Background Videos--------------------->
         <video autoplay muted loop loading="lazy" class="background-video mobile-video">
             <source src="video/bmw-videoloop.mp4" type="video/mp4">
         </video>
 
-        <video autoplay muted loop loading="lazy" class="laptop-background-video laptop-video">
-            <source src="video/laptop-bmw-video.mp4" type="video/mp4">
-        </video>
+        <div class="laptop-video">
+            <div class="blocco"></div>
+            <video autoplay muted loop loading="lazy" class="laptop-background-video">
+                <source src="video/laptop-bmw-video.mp4" type="video/mp4">
+            </video>
+        </div>
+
     </section>
 
     <section class="title-section">

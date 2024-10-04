@@ -12,9 +12,9 @@ body {
 .laptop-responsive-navbar {
     display: none;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    margin: 20px 10rem;
     padding: 10px;
     z-index: 10;
     animation: slideDown 1s;
@@ -23,7 +23,8 @@ body {
 .laptop-responsive-navbar a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 30px;
+    padding: 0 10px;
 }
 
 .mobile-responsive-navbar {
@@ -112,7 +113,12 @@ body {
     z-index: -1;
 }
 
-.laptop-background-video {
+.laptop-video {
+    display: none;
+}
+
+.blocco {
+    background-color: #000000df;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -122,8 +128,14 @@ body {
     z-index: -1;
 }
 
-.laptop-video {
-    display: none;
+.laptop-background-video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+    width: 100vw;
+    height: 100vh;
+    z-index: -2;
 }
 
 .description {
@@ -175,14 +187,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
 /*-------------------------------Animation---------------------------------------*/
 @keyframes slideLeft {
     from {
@@ -224,6 +228,16 @@ body {
     }
 }
 
+@keyframes touch {
+    from {
+        transform: scale(0.5);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
 
 
 
@@ -234,6 +248,10 @@ body {
 
 /*-------------------------------Responsive---------------------------------------*/
 @media only screen and (min-width: 1440px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .laptop-responsive-navbar {
         display: flex;
     }
@@ -248,5 +266,40 @@ body {
 
     .mobile-video {
         display: none;
+    }
+
+    .bmw-logo img {
+        width: 80px
+    }
+
+    .hero {
+        height: 73vh;
+    }
+
+    .description {
+        margin-left: 6rem;
+    }
+
+    .description h1 {
+        font-size: 130px;
+    }
+
+    .description h3 {
+        font-size: 50px;
+    }
+
+    .description-button {
+        padding: 12px 20px;
+        margin: 30px 50px;
+    }
+
+    .title-section h1 {
+        font-size: 30px;
+        border: 3px solid #ffffff;
+    }
+
+    .title-section h2 {
+        font-size: 28px;
+        margin-top: 30px;
     }
 }
