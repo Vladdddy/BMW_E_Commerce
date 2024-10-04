@@ -9,6 +9,11 @@ body {
     font-family: 'Lucida Sans';
 }
 
+/*-----------------------Section 1------------------------*/
+.hero {
+    height: 65vh;
+}
+
 .laptop-responsive-navbar {
     display: none;
     flex-direction: row;
@@ -90,17 +95,9 @@ body {
     animation: slideLeft 1s;
 }
 
-.side-content.after {
-    animation: slideRight 1s;
-}
-
 .side-content a {
     text-decoration: none;
     color: #ffffff;
-}
-
-.hero {
-    height: 65vh;
 }
 
 .background-video {
@@ -117,7 +114,7 @@ body {
     display: none;
 }
 
-.blocco {
+.blur {
     background-color: #000000df;
     position: absolute;
     left: 50%;
@@ -139,13 +136,23 @@ body {
 }
 
 .description {
-    padding: 20px;
+    margin: 20px;
     color: #ffffff;
     animation: slideRight 1s;
 }
 
 .description h1 {
     font-size: 100px;
+}
+
+.description p {
+    font-size: 25px;
+    margin: 0 0 -10px;
+    font-weight: 700;
+}
+
+.description .greater {
+    font-size: 40px;
 }
 
 .description-button {
@@ -156,10 +163,10 @@ body {
     border-radius: 5px;
     font-size: 18px;
     font-weight: 700;
-    margin-top: 10px;
     cursor: pointer;
 }
 
+/*-----------------------Section 2------------------------*/
 .title-section {
     display: flex;
     justify-content: center;
@@ -184,7 +191,55 @@ body {
     padding: 10px;
 }
 
+/*-----------------------Section 3------------------------*/
+.content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    height: auto;
+    margin: 50px 0 50px 0;
+}
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container svg {
+    width: 50px;
+    fill: #212121;
+    margin: 20px;
+}
+
+.container button {
+    padding: 8px 16px;
+    background-color: #2b80ff;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/*-----------------------Section 4------------------------*/
+.bmwx-series-section {
+    height: 30vh;
+    margin-top: 5rem;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+}
 
 
 /*-------------------------------Animation---------------------------------------*/
@@ -277,20 +332,7 @@ body {
     }
 
     .description {
-        margin-left: 6rem;
-    }
-
-    .description h1 {
-        font-size: 130px;
-    }
-
-    .description h3 {
-        font-size: 50px;
-    }
-
-    .description-button {
-        padding: 12px 20px;
-        margin: 30px 50px;
+        display: none;
     }
 
     .title-section h1 {
@@ -301,5 +343,13 @@ body {
     .title-section h2 {
         font-size: 28px;
         margin-top: 30px;
+    }
+
+    .content-section {
+        flex-direction: row;
+    }
+
+    .container h2 {
+        font-size: 22px;
     }
 }
