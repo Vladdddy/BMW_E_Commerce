@@ -239,9 +239,8 @@ body {
 }
 
 .image-container {
-    position: relative;
-    margin: 50px 0;
     overflow: hidden;
+    margin-bottom: -8rem;
 }
 
 .image-container p,
@@ -258,9 +257,13 @@ h2 {
 }
 
 .image-container img {
-    position: absolute;
-    z-index: -2;
-    width: 110vw;
+    z-index: -1;
+    width: 120vw;
+    height: 30vh;
+}
+
+.content-description {
+    transform: translateY(-12rem);
 }
 
 .buyBtn {
@@ -337,7 +340,14 @@ h2 {
     width: 80vw;
 }
 
-
+/*-----------------------Section 5------------------------*/
+footer {
+    height: 30vh;
+    background-color: #d6d6d6;
+    color: #212121;
+    padding: 10px;
+    text-align: center;
+}
 
 
 
